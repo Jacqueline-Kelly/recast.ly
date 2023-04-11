@@ -5,7 +5,22 @@ $.ajaxPrefilter(function (settings, _, jqXHR) {
 });
 
 var searchYouTube = (query, callback) => {
-  // TODO
+  // TODO: write a jquery get request to the hackreact api https://app-hrsei-api.herokuapp.com/api/recastly/videos
+  $.ajax({
+    url: 'https://app-hrsei-api.herokuapp.com/api/recastly/videos/',
+    // type: 'GET',
+    data: {
+      key: YOUTUBE_API_KEY,
+      q: query,
+      maxResults: 1,
+      videoEmbeddable: true,
+      order: 'rating'
+    },
+    // contentType: 'x',
+    success: (data) => callback(data.slice(0, 5)),
+    error: (error, statusCode) => console.log(error, JSON.stringify(statusCode)),
+  });
 };
 
 export default searchYouTube;
+

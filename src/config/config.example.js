@@ -1,5 +1,0 @@
-// Put your API key goes here!
-var API_KEY = 'AIzaSyBBW-pRVa5k86v037ZKe9YQCQbb5rJBR5E';
-var YOUTUBE_API_KEY = 'AIzaSyBBW-pRVa5k86v037ZKe9YQCQbb5rJBR5E';
-
-export { API_KEY, YOUTUBE_API_KEY };

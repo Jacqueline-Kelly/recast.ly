@@ -1,11 +1,11 @@
 import VideoListEntry from './VideoListEntry.js';
 
-const VideoList = ({videos}) => {
+const VideoList = ({videos, clickFunction}) => {
 
   return (
     <div className="video-list">
       {videos.map((item, index) => (
-        <VideoListEntry title={item.snippet.title} description={item.snippet.description} video={item.snippet.thumbnails.default.url} key={index}/>
+        <VideoListEntry video={item} key={index} clickFunction={clickFunction} titleIndex={index}/>
       ))}
     </div>
   );

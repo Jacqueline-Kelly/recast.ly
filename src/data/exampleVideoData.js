@@ -79,7 +79,7 @@ var exampleVideoData = [{
     description: 'Get the full course here: http://devslopes.com/react In this video you will learn how to setup your project for React development and you will build a simple React ...',
     thumbnails: {
       default: {
-        url: 'https://i.ytimg.com/vi/0ByoQm-vnYw/default.jpg',
+        url: 'https://i.ytimg.com/vi/Pd6Ub7Ju2RM/default.jpg',
         width: 120,
         height: 90
       },
