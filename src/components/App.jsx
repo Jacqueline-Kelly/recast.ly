@@ -14,7 +14,7 @@ const App = () => {
   };
 
   const UpdateVideoListArray = (query) => {
-    query = query || '';
+    query = query || 'react';
     searchYouTube(query, (data) => setVideoListArray(data));
   };
 
