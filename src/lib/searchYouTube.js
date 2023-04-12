@@ -12,9 +12,10 @@ var searchYouTube = (query, callback) => {
     data: {
       key: YOUTUBE_API_KEY,
       q: query,
-      maxResults: 1,
+      maxResults: 5,
       videoEmbeddable: true,
-      order: 'rating'
+      order: 'rating',
+      safeSearch: 'strict'
     },
     // contentType: 'x',
     success: (data) => callback(data.slice(0, 5)),
